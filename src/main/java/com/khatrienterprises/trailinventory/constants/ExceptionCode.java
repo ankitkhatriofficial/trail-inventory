@@ -1,4 +1,4 @@
-package com.khatrienterprises.trailinventory.Constants;
+package com.khatrienterprises.trailinventory.constants;
 
 /**
  * @author Ankit Khatri

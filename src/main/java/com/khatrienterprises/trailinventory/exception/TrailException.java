@@ -1,6 +1,6 @@
 package com.khatrienterprises.trailinventory.exception;
 
-import com.khatrienterprises.trailinventory.Constants.ExceptionCode;
+import com.khatrienterprises.trailinventory.constants.ExceptionCode;
 import lombok.Data;
 
 /**

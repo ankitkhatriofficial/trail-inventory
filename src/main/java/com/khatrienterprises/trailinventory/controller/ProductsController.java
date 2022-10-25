@@ -1,6 +1,6 @@
 package com.khatrienterprises.trailinventory.controller;
 
-import com.khatrienterprises.trailinventory.Constants.ExceptionCode;
+import com.khatrienterprises.trailinventory.constants.ExceptionCode;
 import com.khatrienterprises.trailinventory.dto.ProductDto;
 import com.khatrienterprises.trailinventory.exception.TrailException;
 import com.khatrienterprises.trailinventory.service.ProductService;
