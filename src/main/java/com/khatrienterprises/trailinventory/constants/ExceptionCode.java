@@ -5,7 +5,8 @@ package com.khatrienterprises.trailinventory.constants;
  */
 public enum ExceptionCode {
 
-    ONE_OR_MORE_VALIDATION_FAILURE(1000, "Validation failure");
+    ONE_OR_MORE_VALIDATION_FAILURE(1000, "Validation failure"),
+    PRODUCT_NOT_FOUND(1001, "Product not found");
 
     private int code;
     private String message;

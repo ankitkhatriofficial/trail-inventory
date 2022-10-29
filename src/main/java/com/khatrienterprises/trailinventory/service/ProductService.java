@@ -10,5 +10,7 @@ import java.util.List;
  */
 public interface ProductService {
     void createNewProduct(ProductCreateRequest request);
+    void updateProduct(String id, ProductCreateRequest request);
     List<ProductDto> getAllProducts();
+    ProductDto getProductById(String id);
 }
