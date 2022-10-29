@@ -1,6 +1,5 @@
 package com.khatrienterprises.trailinventory.sro;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -13,6 +12,7 @@ import java.util.List;
  * @author Ankit Khatri
  */
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProductCreateRequest extends BaseSro{
 

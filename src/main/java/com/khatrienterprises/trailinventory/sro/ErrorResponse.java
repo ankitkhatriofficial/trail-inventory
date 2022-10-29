@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class ErrorResponse {
+public class ErrorResponse extends BaseSro{
 
     private Integer errCode;
     private String message;
