@@ -18,7 +18,7 @@ public class TrailExceptionsHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = {TrailException.class})
     public ResponseEntity<ErrorResponse> handlePaymentsException(TrailException ex, WebRequest request) {
-        log.error("Request failed with code:{}, message:{}", ex.getErrCode(), ex.getMessage());
+        log.error("Request failed with code:{}, message:{}, request:{}", ex.getErrCode(), ex.getMessage(), request);
         ErrorResponse errorResponse = new ErrorResponse(ex.getErrCode(), ex.getMessage());
         return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR) ;
     }

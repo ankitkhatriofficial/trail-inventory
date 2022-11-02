@@ -4,6 +4,7 @@ import com.khatrienterprises.trailinventory.documents.ProductTransaction;
 import com.khatrienterprises.trailinventory.dto.ProductTransactionDto;
 import com.khatrienterprises.trailinventory.repository.ProductTransactionRepository;
 import com.khatrienterprises.trailinventory.service.ProductTransactionService;
+import com.khatrienterprises.trailinventory.sro.ProductTransactionRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,5 +39,11 @@ public class ProductTransactionServiceImpl implements ProductTransactionService 
                 .transactionType(productTransaction.getTransactionType())
                 .updatedQuantity(productTransaction.getUpdatedQuantity());
         return dtoBuilder.build();
+    }
+
+    // TODO: implement execution of product transaction
+    @Override
+    public void executeTransaction(ProductTransactionRequest request) {
+
     }
 }

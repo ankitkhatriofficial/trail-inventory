@@ -12,5 +12,6 @@ import java.util.List;
 public interface ProductTransactionRepository extends MongoRepository<ProductTransaction, ObjectId> {
 
     List<ProductTransaction> findByProductId(String productId);
+    void deleteAllByProductId(List<String> productIds);
 
 }

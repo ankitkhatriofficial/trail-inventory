@@ -12,6 +12,7 @@ import java.util.List;
 @Builder
 public class ProductDto extends BaseDto{
 
+    private String id;
     private String name;
     private String styleCode;
     private String sku;
