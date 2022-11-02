@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
  */
 
 @RestController
+@CrossOrigin
 @RequestMapping("/trail/products")
 public class ProductsController {
 
@@ -58,5 +59,11 @@ public class ProductsController {
     @GetMapping("/get/{id}")
     public ResponseEntity<?> getAllProducts(@PathVariable("id") String id){
         return new ResponseEntity<>(productService.getProductById(id), HttpStatus.OK);
+    }
+
+    @DeleteMapping("/delete")
+    public ResponseEntity<?> deleteProductsById(@RequestBody List<String> productIds){
+        productService.deleteByIds(productIds);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
